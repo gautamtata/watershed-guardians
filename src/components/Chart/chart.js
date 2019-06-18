@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import CanvasJSReact from '../CanvasChart/canvaschart.js';
+import TestPane from '../TestPane/testpane.js'
+
+import './chart.css'
+
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 function toggleDataSeries(e) {
@@ -9,98 +13,86 @@ function toggleDataSeries(e) {
 	  e.dataSeries.visible = true;
 	}
 }
+
 class Chart extends Component {	
+	state = {
+		selectedTests: [],
+		allTests: []
+	}
+
+	onClickTest = (testName) => {
+		// if testName is already selected, unselect it
+		// if testName is not in selectedTests: add it.
+		var newSelectedTests = []
+		for (var i = 0; i < this.state.selectedTests.length; i++) {
+			let selectedTest = this.state.selectedTests[i]
+			if (testName !== selectedTest) {
+				newSelectedTests.push(selectedTest)
+			}
+		}	
+		if (!this.state.selectedTests.includes(testName)) newSelectedTests.push(testName)
+		this.setState({selectedTests: newSelectedTests})
+	}
+
+	componentDidMount() {
+		// initializing selectedTests to all possible tests:
+		var testNames = []
+		for (var testName in this.props.data) {
+			if (this.props.data.hasOwnProperty(testName)) {
+				// for each testName in data, we will create a new object to match Canvas.js format:
+				testNames.push(testName)	
+			}
+		}
+		this.setState({selectedTests: testNames, allTests: testNames})
+	}
   
 	render() {
-		const options = {
-				animationEnabled: true,	
-				title:{
-					text: "Carmel river lagoon test data"
-        },
-        axisX : {
-          title: "DATE",
-          includeZero: false
-        },
-				axisY : {
-					title: "UNITS",
-					includeZero: false
-				},
-				toolTip: {
-					shared: true
-        },
-        legend: {
-          cursor: "pointer",
-          itemclick : toggleDataSeries
-        },
-        
-				data: [{
-					type: "spline",
-					name: "pH",
-					showInLegend: true,
-					dataPoints: [
-						{ y: 7.5, label: "9/12/2018" },
-						{ y: 9, label: "9/13/2018" },
-						{ y: 8, label: "9/26/2018" },
-						{ y: 11, label: "10/30/2018" },
-						{ y: 8, label: "01/23/2019" },
-						{ y: 8.5, label: "02/07/2019" },
-						{ y: 8, label: "02/12/2019" },
-						{ y: 8.5, label: "02/20/2019" }
-						
-					]
-				},
-				{
-					type: "spline",
-          name: "Temp ",
-          suffix: "C",
-					showInLegend: true,
-					dataPoints: [
-						{ y: 17.8, label: "9/12/2018" },
-						{ y: 11.1, label: "9/13/2018" },
-						{ y: 17.8, label: "9/26/2018" },
-						{ y: 11, label: "10/30/2018" },
-						{ y: 19, label: "01/23/2019" },
-						{ y: 9.2, label: "02/07/2019" },
-						{ y: 8, label: "02/12/2019" },
-						{ y: 13.6, label: "2/20/2019" }
-					]
-				},{
-					type: "spline",
-          name: "Depth",
-          suffix: "m",
-					showInLegend: true,
-					dataPoints: [
-						{ y: 16.5, label: "9/12/2018" },
-						{ y: 20.3, label: "9/13/2018" },
-						{ y: 6.4, label: "9/26/2018" },
-						{ y: 16, label: "10/30/2018" },
-						{ y: 2.3, label: "01/23/2019" },
-						{ y: 6, label: "02/07/2019" },
-						{ y: 4.5, label: "02/12/2019" },
-						{ y: 8.5, label: "2/20/2019" }
-					]
-				},{
-					type: "spline",
-          			name: "Dissolved Oxygen",
-					showInLegend: true,
-					dataPoints: [
-						{ y: 5.6, label: "9/12/2018" },
-						{ y: 7, label: "9/13/2018" },
-						{ y: 16.2, label: "9/26/2018" },
-						{ y: 7 , label: "10/30/2018" },
-						{ y:  13, label: "01/23/2019" },
-						{ y: 9.2, label: "02/07/2019" },
-						{ y: 11.2, label: "02/12/2019" },
-						{ y: 14.5, label: "2/20/2019" }
-					]
-				}]
+		// transform data from data.js to format that Canvas.js expects
+		var canvasData = []
+		for (var testName in this.props.data) {
+			if (this.props.data.hasOwnProperty(testName)) {
+				if (this.state.selectedTests.includes(testName)) {
+					// for each testName in data, we will create a new object to match Canvas.js format:
+					canvasData.push(
+						{
+							type: 'spline',
+							name: testName,
+							dataPoints: this.props.data[testName],
+							showInLegend: false
+						}
+					)
+				}
+			}
 		}
-		
+
+		let options = {
+			title: {
+				text: "Carmel river lagoon test data",
+			},
+			animationEnabled: true,
+			axisX : {
+	          title: "DATE",
+	          includeZero: false
+	        },
+	        axisY : {
+				title: "UNITS",
+				includeZero: false
+			},
+			toolTip: {
+				shared: true
+			},
+			data: canvasData,
+		}
+
 		return (
-		<div>
-			<CanvasJSChart options = {options} 	/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
-		</div>
+			<div className="chart-container">
+				<CanvasJSChart options={options}/>
+				<TestPane 
+					selectedTests={this.state.selectedTests}
+					allTests={this.state.allTests}
+					onClickTest={this.onClickTest}
+				/>
+			</div>
 		);
 	}
 }

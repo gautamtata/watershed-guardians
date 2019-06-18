@@ -1,0 +1,9 @@
+.canvasjs-chart-canvas {
+	width: 100%;
+}
+
+#canvasjs-react-chart-container-0 {
+	width: 70%;
+	height: 400px;
+	position: relative;
+}

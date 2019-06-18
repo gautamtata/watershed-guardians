@@ -1,0 +1,46 @@
+.test {
+	background-color: white;
+	color: black;
+	padding: 10px 30px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: relative;
+	left: 300px;
+	color:green;
+	cursor: pointer;
+	
+}
+
+.test-label {
+	cursor: pointer
+}
+
+.selected {
+	background-color: yellow;
+}
+
+.test-pane {
+	width: 30%;
+	
+}
+
+.info-button {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.test-pane h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.title-message{
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.message{
+	font-family: 'Roboto', sans-serif;
+}
