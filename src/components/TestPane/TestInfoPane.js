@@ -1,18 +1,11 @@
 import React, {Component} from 'react'
 import './testpane.css'
 
-const TITLES = {
-	'ph': "PH",
-	'temperature': "TEMPERATURE",
-	'depth': "DEPTH",
-	'dissolved oxygen': "DISSOLVED OXYGEN"
-}
-
 const MESSAGES = {
-	'ph': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-	'temperature': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-	'depth': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-	'dissolved oxygen': "Dissolved Oxygen information"
+	'ph': "The pH of river water is the measure of how acidic or basic the water is on a scale of 0-14. It is a measure of hydrogen ion concentration. U.S. natural water falls between 6.5 and 8.5 on this scale with 7.0 being neutral. The optimum pH for river water is around 7.4. ",
+	'temperature': "Temperature impacts the rates of metabolism and growth of aquatic organisms, rate of plants' photosynthesis, solubility of oxygen in river water, and organisms' sensitivity to disease, parasites, and toxic materials. At a higher temperature, plants grow and die faster, leaving behind matter that requires oxygen for decomposition.",
+	'depth': "The depth of a river is an indicator of many factors including: rain that year,groundwater depletion or an obstruction in the course of the river.",
+	'dissolved oxygen': "An adequate supply of dissolved oxygen gas is essential for the survival of aquatic organisms. A deficiency in this area is a sign of an unhealthy river. There are a variety of factors affecting levels of dissolved oxygen. The atmosphere is a major source of dissolved oxygen in river water."
 }
 
 // props:
@@ -21,12 +14,12 @@ const MESSAGES = {
 class TestInfoPane extends Component {
 	render() {
 		return (
-			<div> 
+			<div className="test-info-pane"> 
 				<h2>{this.props.testPane}</h2>
-				<div className="close fas fa-window-close" onClick={this.props.close}>CLOSE</div>
+				<i className="close-icon fas fa-times fa-2x" onClick={this.props.close}></i>
 				<br />
-				<div style = {{textAlign:"right",textDecoration:"underline",fontWeight:'bold'}} classname ="title-message">{TITLES[this.props.testName]}</div>
-				<div style = {{textAlign:"right",fontSize:'3.5vw'}}className="message">{MESSAGES[this.props.testName]}</div>
+				<h1>{this.props.testName.toUpperCase()}</h1>
+				<div className="message">{MESSAGES[this.props.testName]}</div>
 				
 			</div>
 		)

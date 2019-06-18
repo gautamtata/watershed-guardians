@@ -1,25 +1,16 @@
 import React, {Component} from 'react';
 import CanvasJSReact from '../CanvasChart/canvaschart.js';
 import TestPane from '../TestPane/testpane.js'
-
+import ChartModal from '../Modal/modal'
 import './chart.css'
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-function toggleDataSeries(e) {
-	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible ){
-	  e.dataSeries.visible = false;
-	} else {
-	  e.dataSeries.visible = true;
-	}
-}
-
 class Chart extends Component {	
 	state = {
 		selectedTests: [],
-		allTests: []
+		  allTests: []
 	}
-
 	onClickTest = (testName) => {
 		// if testName is already selected, unselect it
 		// if testName is not in selectedTests: add it.
@@ -66,9 +57,6 @@ class Chart extends Component {
 		}
 
 		let options = {
-			title: {
-				text: "Carmel river lagoon test data",
-			},
 			animationEnabled: true,
 			axisX : {
 	          title: "DATE",
@@ -84,19 +72,22 @@ class Chart extends Component {
 			data: canvasData,
 		}
 
-		return (
-			<div className="chart-container">
-				<CanvasJSChart options={options}/>
-				<TestPane 
-					selectedTests={this.state.selectedTests}
-					allTests={this.state.allTests}
-					onClickTest={this.onClickTest}
-				/>
-			</div>
-		);
+		  return (
+		 	<div className="chart-container">
+		 			<CanvasJSChart options={options}/>
+					<TestPane 
+		 			title={this.props.title}
+		  				selectedTests={this.state.selectedTests}
+		 				allTests={this.state.allTests}
+		  				onClickTest={this.onClickTest}
+					/>
+		 	</div>
+		  );
+		// return(
+		// 	<ChartModal />
+		// )
+		
 	}
 }
-
-
  
 export default Chart;

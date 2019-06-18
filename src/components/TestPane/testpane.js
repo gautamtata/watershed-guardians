@@ -6,6 +6,7 @@ import TestInfoPane from './TestInfoPane.js'
 // - selectedTests[]
 // - allTests[]
 // - onClickTest(testName)
+// - title
 class TestPane extends Component {
 
 	state = {
@@ -19,10 +20,12 @@ class TestPane extends Component {
 	render() {
 		if (this.state.testInfoName) {
 			return (
-				<TestInfoPane 
-					testName={this.state.testInfoName}
-					close={this.close}
-				/>
+				<div className="test-pane">
+					<TestInfoPane 
+						testName={this.state.testInfoName}
+						close={this.close}
+					/>
+				</div>
 			)
 		}
 
@@ -38,10 +41,8 @@ class TestPane extends Component {
 
 		return (
 			<div className="test-pane">
-				<h1>Tests</h1>
-				<p>Select or unselect the tests below to render on the graph</p>
-				<p>This data for each test was collected at this point on the Carmel river.</p>
-				<p>Click on 'info' to learn more about each test.</p>
+				<h1>{this.props.title}</h1>
+				
 				{testComponents}
 			</div>
 		)

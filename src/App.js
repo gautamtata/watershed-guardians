@@ -3,6 +3,7 @@ import Map from './components/Map/Map.js'
 import InfoPane from './components/InfoPane/infopane.js'
 import Chart from './components/Chart/chart.js'
 import data from './data'
+import ChartModal from './components/Modal/modal'
 
 import './App.css';
 
@@ -42,12 +43,12 @@ class App extends React.Component {
     if (this.state.selectedMarker) {
       let key = this.state.selectedMarker.lat.toString(10) + " " + this.state.selectedMarker.long.toString(10)
       chart = <Chart 
-        data={data[key]}
+        data={data[key]['testData']}
       />
     }
-   /* return (
+    return (
        <div className="App">
-
+        
          <div className="map-and-chart-container">
            <Map 
              selectedMarker={this.state.selectedMarker}
@@ -58,15 +59,6 @@ class App extends React.Component {
         <InfoPane />
       </div>
     );
-  }
-} */
-    return (
-      <div className="map-and-chart-container">
-        <Chart 
-          data={data["36.4755 -121.7345"]}
-        />
-      </div>
-    )
   }
 } 
 
