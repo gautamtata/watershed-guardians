@@ -1,33 +1,3 @@
-.react-tabs{
-    background: white;
-    position: relative;
-    border-style: solid;
-    border-color: black;
-    flex-grow: 2;
-    padding:10px;
-}
-
 p{
-    font-size:1.5vw;
-    border-style:dotted;
-    border-color:black;
-    color:black;
-    text-align: left;
-    border-bottom: 10px solid black;
-}
-.react-tabs{
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.react-tab-list{
-    background: orange;
-    position: relative;
-    text-decoration: underline;
-    font-size: 1.75vw;
-
-}
-
-.about-panel{
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
 }

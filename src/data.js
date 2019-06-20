@@ -12,7 +12,7 @@ var data = {
 				{ y: 8, label: "02/12/2019" },
 				{ y: 8.5, label: "02/20/2019" }
 			],
-			'temperature': [
+			'temperature (deg C)': [
 				{ y: 17.8, label: "9/12/2018" },
 				{ y: 11.1, label: "9/13/2018" },
 				{ y: 17.8, label: "9/26/2018" },
@@ -22,7 +22,7 @@ var data = {
 				{ y: 8, label: "02/12/2019" },
 				{ y: 13.6, label: "2/20/2019" }
 			],
-			'depth': [
+			'depth (cm)': [
 				{ y: 16.5, label: "9/12/2018" },
 				{ y: 20.3, label: "9/13/2018" },
 				{ y: 6.4, label: "9/26/2018" },
@@ -32,7 +32,7 @@ var data = {
 				{ y: 4.5, label: "02/12/2019" },
 				{ y: 8.5, label: "2/20/2019" }
 			],
-			'dissolved oxygen': [
+			'dissolved oxygen (ppm)': [
 				{ y: 5.6, label: "9/12/2018" },
 				{ y: 7, label: "9/13/2018" },
 				{ y: 16.2, label: "9/26/2018" },

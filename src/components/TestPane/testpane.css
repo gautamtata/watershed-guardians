@@ -1,3 +1,14 @@
+#AppBar{
+	width:1%;
+	color:black;
+}
+#info-circle{
+	float: right;
+	position: relative;
+	bottom:35px;
+}
+
+
 .test {
 	background-color: white;
 	color: black;

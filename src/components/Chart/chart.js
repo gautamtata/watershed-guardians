@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CanvasJSReact from '../CanvasChart/canvaschart.js';
+import CanvasJSReact from '../../CanvasChart/canvaschart.js';
 import TestPane from '../TestPane/testpane.js'
 import ChartModal from '../Modal/modal'
 import './chart.css'
@@ -9,8 +9,9 @@ let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class Chart extends Component {	
 	state = {
 		selectedTests: [],
-		  allTests: []
+		allTests: []
 	}
+
 	onClickTest = (testName) => {
 		// if testName is already selected, unselect it
 		// if testName is not in selectedTests: add it.
@@ -28,13 +29,14 @@ class Chart extends Component {
 	componentDidMount() {
 		// initializing selectedTests to all possible tests:
 		var testNames = []
+
 		for (var testName in this.props.data) {
 			if (this.props.data.hasOwnProperty(testName)) {
 				// for each testName in data, we will create a new object to match Canvas.js format:
-				testNames.push(testName)	
+				testNames.push(testName)
 			}
 		}
-		this.setState({selectedTests: testNames, allTests: testNames})
+		this.setState({selectedTests: [testNames[0]], allTests: testNames})
 	}
   
 	render() {
@@ -58,14 +60,13 @@ class Chart extends Component {
 
 		let options = {
 			animationEnabled: true,
+			axisY: {
+				yValueFormatString: "#0.## °C",
+			},	
 			axisX : {
 	          title: "DATE",
 	          includeZero: false
 	        },
-	        axisY : {
-				title: "UNITS",
-				includeZero: false
-			},
 			toolTip: {
 				shared: true
 			},
@@ -73,19 +74,25 @@ class Chart extends Component {
 		}
 
 		  return (
-		 	<div className="chart-container">
-		 			<CanvasJSChart options={options}/>
-					<TestPane 
-		 			title={this.props.title}
-		  				selectedTests={this.state.selectedTests}
-		 				allTests={this.state.allTests}
-		  				onClickTest={this.onClickTest}
-					/>
-		 	</div>
+		  	<div>
+			  	<div className="chart-container-wrapper" onClick={() => this.props.unselectMarker()}>
+			  	</div>
+			 	<div className="chart-container">
+
+			 			<div className="canvas-chart">
+			 				<div className="title">{this.props.title}</div>
+				 			<CanvasJSChart options={options}/>
+			 			</div>
+						<TestPane 
+			 				title={this.props.title}
+			  				selectedTests={this.state.selectedTests}
+			 				allTests={this.state.allTests}
+			  				onClickTest={this.onClickTest}
+						/>
+			 	</div>
+			 </div>
+		 	
 		  );
-		// return(
-		// 	<ChartModal />
-		// )
 		
 	}
 }

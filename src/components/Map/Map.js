@@ -45,14 +45,17 @@ class Map extends Component {
     })
 
     return (
+      <div className = "nav-map-wrapper">
+      
       <ReactMapGL
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})}
         mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN}
-        mapStyle="mapbox://styles/gautamtata/cjwy3b2a8144o1cpa0lourv0t"
+        mapStyle="mapbox://styles/gautamtata/cjx49oh8z3njt1cmobbui554f"
       >
         {markers}
       </ReactMapGL>
+      </div>
     );
   }
 }

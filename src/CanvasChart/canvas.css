@@ -1,0 +1,9 @@
+.canvasjs-chart-canvas {
+	width: 100%;
+}
+
+.canvas-chart {
+	width: 70%;
+	height: 400px;
+	position: relative;
+}
