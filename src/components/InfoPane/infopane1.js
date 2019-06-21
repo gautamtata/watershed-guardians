@@ -54,19 +54,25 @@ export default function ScrollableTabsButtonAuto() {
         </Tabs>
       </AppBar>
       {value === 0 && <Infopane>
-       <p> The mission of the watershed guardians is to preserve and eventually restore the Carmel River and watershed to its former health and beauty. </p>
-       <br /> <br />
-      <b>Why should you care?</b> 
+        <img src = {require('../../assets/news7.jpg')} alt = 'carmel-river' />
         <br />
+       <p> The mission of the watershed guardians is to preserve and eventually restore the Carmel River and watershed to its former health and beauty. </p>
+       <br /> 
+      <b>Why should you care?</b> 
+       
 
         <p>About 90% of the entire county depends on the Carmel River for water. We've conducted tests, that measure a variety of factors, which show the Carmel river deteriorating at various points on its path.</p>
-        <p>We hope our data and information will help shouldq</p>
+        <p>We hope our data and information will help residents understand the effects of climate change on the watershed.</p>
        
 
       </Infopane>}
-      {value === 1 && <Infopane>abc</Infopane>}
+      {value === 1 && <Infopane>
+        <img src = {require('../../assets/news14.png')} alt = 'carmel-river' />
+
+      </Infopane>}
       {value === 2 && <Infopane> 
       <p>
+    
       <b>Volunteering:</b> 
       <br />
       The Carmel River Watershed Conservancy always welcomes volunteering by local residents and those who consider themselves stewards of the Carmel River.  We participate with Carmel River Steelhead Association(CRSA) members and the Monterey Peninsula Water Management District staff in fish rescues when the river flows begin to trap or isolate steelhead.  Also, CRWC periodically works with other organizations in cleanup activities along the river and in tributary streams and creeks.

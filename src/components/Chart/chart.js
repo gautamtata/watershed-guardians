@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CanvasJSReact from '../CanvasChart/canvaschart.js';
+import CanvasJSReact from '../CanvasChart/canvasjs.react';
 import TestPane from '../TestPane/testpane.js'
 import './chart.css'
 
@@ -50,7 +50,7 @@ class Chart extends Component {
 							type: 'spline',
 							name: testName,
 							dataPoints: this.props.data[testName],
-							showInLegend: false
+							showInLegend: true
 						}
 					)
 				}
