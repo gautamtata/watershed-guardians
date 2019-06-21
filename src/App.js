@@ -5,8 +5,7 @@ import data from './data'
 import Infopane from './components/InfoPane/infopane1'
 
 import './App.css';
-
-
+import './mobile.css'
 
 // why we use super(props): https://overreacted.io/why-do-we-write-super-props/
 class App extends React.Component {
@@ -26,7 +25,7 @@ class App extends React.Component {
     }
 
     // this marker is already set, so unset:
-    if (this.state.selectedMarker.lat === lat && this.state.selectedMarker.long == long) {
+    if (this.state.selectedMarker.lat === lat && this.state.selectedMarker.long === long) {
       this.setState({ selectedMarker: null })
       return
     }
@@ -45,6 +44,7 @@ class App extends React.Component {
     var chart = null;
     if (this.state.selectedMarker) {
       let key = this.state.selectedMarker.lat.toString(10) + " " + this.state.selectedMarker.long.toString(10)
+      console.log(key)
       chart = <Chart 
         unselectMarker={this.unselectMarker}
         data={data[key]['testData']}
@@ -52,9 +52,8 @@ class App extends React.Component {
       />
     }
     return (
-     
-      
        <div className="App">
+         <Infopane />
          <div className="map-and-chart-container">
            <Map 
              selectedMarker={this.state.selectedMarker}
@@ -62,9 +61,7 @@ class App extends React.Component {
            />
            {chart ? (chart) : ""}
          </div>
-        <Infopane />
       </div>
-    
     );
   }
 } 

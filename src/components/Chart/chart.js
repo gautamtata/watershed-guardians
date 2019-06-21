@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import CanvasJSReact from '../../CanvasChart/canvaschart.js';
 import TestPane from '../TestPane/testpane.js'
-import ChartModal from '../Modal/modal'
 import './chart.css'
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -75,20 +74,22 @@ class Chart extends Component {
 
 		  return (
 		  	<div>
+			  	
 			  	<div className="chart-container-wrapper" onClick={() => this.props.unselectMarker()}>
 			  	</div>
 			 	<div className="chart-container">
-
-			 			<div className="canvas-chart">
-			 				<div className="title">{this.props.title}</div>
-				 			<CanvasJSChart options={options}/>
-			 			</div>
-						<TestPane 
+						 <p className="go-back-button" onClick={() => this.props.unselectMarker()}>go back</p>
+						 <TestPane 
 			 				title={this.props.title}
 			  				selectedTests={this.state.selectedTests}
 			 				allTests={this.state.allTests}
 			  				onClickTest={this.onClickTest}
 						/>
+			 			<div className="canvas-chart">
+			 				<div className="title">{this.props.title}</div>
+				 			<CanvasJSChart options={options}/>
+			 			</div>
+
 			 	</div>
 			 </div>
 		 	

@@ -35,3 +35,15 @@
 .chart-container-wrapper::after {
     opacity: 0.7;
 }
+
+.go-back-button {
+    display: none;
+    padding-top: 12px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.test-info-pane {
+    border: 1px solid lightgray;
+    padding: 10px;
+}

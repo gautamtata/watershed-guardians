@@ -15,9 +15,9 @@ const pinStyle = {
 export default class Pin extends PureComponent {
 
   render() {
-    const {size = 20, onClick} = this.props;
+    const {size = 25, onClick} = this.props;
 
-    if (this.props.isSelected) pinStyle.fill = 'yellow'
+    if (this.props.isSelected) pinStyle.fill = 'blue'
 
     return (
       <svg 

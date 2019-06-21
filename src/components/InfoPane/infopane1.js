@@ -47,29 +47,38 @@ export default function ScrollableTabsButtonAuto() {
           variant="scrollable"
           scrollButtons="auto"
         >
-          <Tab label="About" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
+          <Tab label="About the project" />
+          <Tab label="The tests" />
+          <Tab label="How to help" />
+          
         </Tabs>
       </AppBar>
       {value === 0 && <Infopane>
-       <p> The goal of the watershed guardians program is to investigate river ecosystems and their associated watersheds. 
-       In particular, <b>we emphasize science that will help us to better conserve Carmel river. 
-       This conservation research includes long-term monitoring to detect changes over time, and short-term projects focused on understanding and diminishing threats to river habitats and communities.</b> <br />
+       <p> The mission of the watershed guardians is to preserve and eventually restore the Carmel River and watershed to its former health and beauty. 
+       <br /> <br />
       <b>Why should you care?</b> 
-       <ul className="effect">
-          <li>About 90% of the county directly depends on the river as a source of water</li>
-          <li>Effects of climate change could cause chemical imbalances in the river essentially wiping out ecosystems</li>
-          <li>You, your family and your children are going to be drinking this water.</li>
-       </ul>
-       
-       
+        <br />
+
+        <p>About 90% of the entire county depends on the Carmel River for water. We've conducted tests, that measure a variety of factors, which show the Carmel river deteriorating at various points on its path.</p>
+        <p>We hope our data and information will help shouldq</p>
        </p>
 
       </Infopane>}
-      {value === 1 && <Infopane>Item Two</Infopane>}
-      {value === 2 && <Infopane>Item Three</Infopane>}
-      {value === 3 && <Infopane>Item Four</Infopane>}
+      {value === 1 && <Infopane>abc</Infopane>}
+      {value === 2 && <Infopane> 
+      <p>
+      <b>Volunteering:</b> 
+      <br />
+      The Carmel River Watershed Conservancy always welcomes volunteering by local residents and those who consider themselves stewards of the Carmel River.  We participate with Carmel River Steelhead Association(CRSA) members and the Monterey Peninsula Water Management District staff in fish rescues when the river flows begin to trap or isolate steelhead.  Also, CRWC periodically works with other organizations in cleanup activities along the river and in tributary streams and creeks.
+      <br />
+
+      <b> Other resources: </b>
+      <em>https://www.carmelriverwatershed.org/</em>
+
+      </p>
+      </Infopane>}
+      
+      
     </div>
   );
 }
