@@ -54,14 +54,14 @@ export default function ScrollableTabsButtonAuto() {
         </Tabs>
       </AppBar>
       {value === 0 && <Infopane>
-       <p> The mission of the watershed guardians is to preserve and eventually restore the Carmel River and watershed to its former health and beauty. 
+       <p> The mission of the watershed guardians is to preserve and eventually restore the Carmel River and watershed to its former health and beauty. </p>
        <br /> <br />
       <b>Why should you care?</b> 
         <br />
 
         <p>About 90% of the entire county depends on the Carmel River for water. We've conducted tests, that measure a variety of factors, which show the Carmel river deteriorating at various points on its path.</p>
         <p>We hope our data and information will help shouldq</p>
-       </p>
+       
 
       </Infopane>}
       {value === 1 && <Infopane>abc</Infopane>}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CanvasJSReact from '../../CanvasChart/canvaschart.js';
+import CanvasJSReact from '../CanvasChart/canvaschart.js';
 import TestPane from '../TestPane/testpane.js'
 import './chart.css'
 

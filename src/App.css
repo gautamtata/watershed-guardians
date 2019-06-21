@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+p{
+  font-size: 1.3em;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
