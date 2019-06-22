@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/watershed-guardians/precache-manifest.971e5067dfc25fb8a569070d3c5ba2b1.js"
+  "/watershed-guardians/precache-manifest.c0afaca484c17aeac78d381d9fa543a2.js"
 );
 
 self.addEventListener('message', (event) => {

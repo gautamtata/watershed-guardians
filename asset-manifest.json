@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/watershed-guardians/static/css/main.46e4b6cd.chunk.css",
-    "main.js": "/watershed-guardians/static/js/main.d45b828e.chunk.js",
-    "main.js.map": "/watershed-guardians/static/js/main.d45b828e.chunk.js.map",
+    "main.css": "/watershed-guardians/static/css/main.a812fd28.chunk.css",
+    "main.js": "/watershed-guardians/static/js/main.d6d7f55c.chunk.js",
+    "main.js.map": "/watershed-guardians/static/js/main.d6d7f55c.chunk.js.map",
     "runtime~main.js": "/watershed-guardians/static/js/runtime~main.226dcd1f.js",
     "runtime~main.js.map": "/watershed-guardians/static/js/runtime~main.226dcd1f.js.map",
     "static/css/2.2614ebd1.chunk.css": "/watershed-guardians/static/css/2.2614ebd1.chunk.css",
-    "static/js/2.912de5d5.chunk.js": "/watershed-guardians/static/js/2.912de5d5.chunk.js",
-    "static/js/2.912de5d5.chunk.js.map": "/watershed-guardians/static/js/2.912de5d5.chunk.js.map",
+    "static/js/2.7e86fd64.chunk.js": "/watershed-guardians/static/js/2.7e86fd64.chunk.js",
+    "static/js/2.7e86fd64.chunk.js.map": "/watershed-guardians/static/js/2.7e86fd64.chunk.js.map",
     "index.html": "/watershed-guardians/index.html",
-    "precache-manifest.971e5067dfc25fb8a569070d3c5ba2b1.js": "/watershed-guardians/precache-manifest.971e5067dfc25fb8a569070d3c5ba2b1.js",
+    "precache-manifest.c0afaca484c17aeac78d381d9fa543a2.js": "/watershed-guardians/precache-manifest.c0afaca484c17aeac78d381d9fa543a2.js",
     "service-worker.js": "/watershed-guardians/service-worker.js",
     "static/css/2.2614ebd1.chunk.css.map": "/watershed-guardians/static/css/2.2614ebd1.chunk.css.map",
-    "static/css/main.46e4b6cd.chunk.css.map": "/watershed-guardians/static/css/main.46e4b6cd.chunk.css.map"
+    "static/css/main.a812fd28.chunk.css.map": "/watershed-guardians/static/css/main.a812fd28.chunk.css.map",
+    "static/media/news14.png": "/watershed-guardians/static/media/news14.0324da62.png",
+    "static/media/news7.jpg": "/watershed-guardians/static/media/news7.40782821.jpg"
   }
 }
