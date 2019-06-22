@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     position: 'absolute',
-    width: 400,
+    width: 600,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing(4),
@@ -35,7 +35,6 @@ const useStyles = makeStyles(theme => ({
 
 function SimpleModal() {
   const [open, setOpen] = React.useState(false);
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
 
   const handleOpen = () => {
@@ -65,22 +64,15 @@ function SimpleModal() {
         onClose={handleClose}
       >
         <div style={modalStyle} className={classes.paper} id="test-range-modal">
-          <Typography variant="h6" id="modal-title">
-            <b>
-              {' '}
-              <em>
-                {' '}
-                These ranges are approximate and research shows that they
-                correspond to a healthy aquatic life
-              </em>
-            </b>
-          </Typography>
-          <Typography variant="subtitle1" id="simple-modal-description">
-            <b> pH => 7.0 - 8.0 </b>
-            <b> Air Temperature => 10.0 degree - 20.0 degree celcius </b>
-            <b> Depth => Above 100m </b>
-            <b> Dissolved Oxygen => more than 8mg/L </b>
-          </Typography>
+          <iframe
+            title="about-watershed"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/R2n_feO5MvA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </Modal>
     </div>

@@ -52,6 +52,7 @@ export default function ScrollableTabsButtonAuto() {
       </AppBar>
       {value === 0 && (
         <Infopane>
+          <img src={require('../../assets/about-page.jpg')} alt="image1" />
           <p>
             {' '}
             The mission of the watershed guardians is to preserve and eventually
@@ -59,7 +60,9 @@ export default function ScrollableTabsButtonAuto() {
             beauty.{' '}
           </p>
           <br /> <br />
-          <b>Why should you care?</b>
+          <p>
+            <b>Why should you care?</b>
+          </p>
           <br />
           <p>
             About 90% of the entire county depends on the Carmel River for
@@ -67,15 +70,35 @@ export default function ScrollableTabsButtonAuto() {
             which show the Carmel river deteriorating at various points on its
             path.
           </p>
-          <p>We hope our data and information will help shouldq</p>
+          <p>
+            We hope our data and information will help the general public better
+            understand the importance of the local watershed and what they can
+            do to conserve it.
+          </p>
         </Infopane>
       )}
-      {value === 1 && <Infopane>abc</Infopane>}
+      {value === 1 && (
+        <Infopane>
+          <img src={require('../../assets/tests.png')} alt="image2" />
+          <p>
+            1. pH: Range 6.0 - 8.5.<b></b>Effected species:{' '}
+            <b>steelHead trout,Humans</b> <br />
+            2. Temperature: Range: 10.0 - 20.0 degree C. Effected species:{' '}
+            <b>Humans, Aquatic anaimals</b>
+            <br />
+            3. Depth: Effected Species:<b>Humans, Aquatic species</b> <br />
+            4. Dissolved Oxygen: Effected Species: <b></b>All Biodiversity{' '}
+            <br />
+          </p>
+        </Infopane>
+      )}
       {value === 2 && (
         <Infopane>
+          <img src={require('../../assets/monarch.png')} alt="image3" />
+
+          <b>Volunteering:</b>
+          <br />
           <p>
-            <b>Volunteering:</b>
-            <br />
             The Carmel River Watershed Conservancy always welcomes volunteering
             by local residents and those who consider themselves stewards of the
             Carmel River. We participate with Carmel River Steelhead
@@ -84,10 +107,8 @@ export default function ScrollableTabsButtonAuto() {
             to trap or isolate steelhead. Also, CRWC periodically works with
             other organizations in cleanup activities along the river and in
             tributary streams and creeks.
-            <br />
-            <b> Other resources: </b>
-            <em>https://www.carmelriverwatershed.org/</em>
           </p>
+          <br />
         </Infopane>
       )}
     </div>

@@ -41,12 +41,10 @@ class Chart extends Component {
   }
 
   render() {
-    // transform data from data.js to format that Canvas.js expects
     var canvasData = [];
     for (var testName in this.props.data) {
       if (this.props.data.hasOwnProperty(testName)) {
         if (this.state.selectedTests.includes(testName)) {
-          // for each testName in data, we will create a new object to match Canvas.js format:
           canvasData.push({
             type: 'spline',
             name: testName,
