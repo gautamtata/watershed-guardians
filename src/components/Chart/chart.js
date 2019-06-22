@@ -98,4 +98,4 @@ class Chart extends Component {
 	}
 }
  
-export default Chart;
+export default Chart
