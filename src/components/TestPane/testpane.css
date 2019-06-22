@@ -1,59 +1,57 @@
-#AppBar{
-	width:1%;
-	color:black;
+#AppBar {
+  width: 1%;
+  color: black;
 }
-#info-circle{
-	float: right;
-	position: relative;
-	bottom:35px;
+#info-circle {
+  float: right;
+  position: relative;
+  bottom: 35px;
 }
-
 
 .test {
-	background-color: white;
-	color: black;
-	padding: 10px 30px;
-	border: 1px solid gray;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  border: 1px solid gray;
 }
 
 .close-icon {
-	position: relative;
-	float: right;
-	cursor: pointer;
+  position: relative;
+  float: right;
+  cursor: pointer;
 }
 
 .test-label {
-	cursor: pointer
+  cursor: pointer;
 }
 
-
 .selected {
-	background-color: yellow;
+  background-color: yellow;
 }
 
 .test-pane {
-	width: 30%;
-	padding: 30px;
-	border-left: 1px solid lightgray;
-	background-color: white;
+  width: 30%;
+  padding: 30px;
+  border-left: 1px solid lightgray;
+  background-color: white;
 }
 
 .info-button {
-	text-decoration: underline;
-	cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 h1 {
-	font-size: 1.5em;
-	font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
-.title-message{
-	text-align: center;
-	font-weight: bold;
-	text-decoration: underline;
+.title-message {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
-.message{
-	margin-top: 20px;
-	margin-bottom: 20px
+.message {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
