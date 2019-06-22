@@ -7,7 +7,7 @@ I was working at the watershed and saw the impact that the river has on the loca
 ## Code style
 If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
 
-[![Airbnb/JSX](https://github.com/airbnb/javascript/tree/master/react)
+ [Airbnb/JSX](https://github.com/airbnb/javascript/tree/master/react)
  
 ## Screenshots
 ![screenshot1](./src/assets/screenShot1.png)
