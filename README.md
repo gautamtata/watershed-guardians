@@ -1,5 +1,5 @@
 ## Project title
-The watershed guardians is a web application that serves the county of Monterey by helping local residents understand the impacts of climate change on the Carmel river watershed by using maps and graphs.
+The *watershed guardians* is a web application that serves the county of Monterey by helping local residents understand the impacts of climate change on the Carmel river watershed by using maps and graphs.
 
 ## Motivation
 I was working at the watershed and saw the impact that the river has on the local population. The water,agriculture and tourism industry all depend on the river as a source of water but don't understand the impact that climate change can have on the water source and how it can affect their personal lives. I wanted to build this project to hopefully project a visual understanding of **why this matters**.
@@ -20,11 +20,10 @@ I was working at the watershed and saw the impact that the river has on the loca
 
 ## Architecture
 ![Soltution architecture](./src/assets/architecture.png)
-![Automatically create markers for new Lat Longs](./src/assets/codeSnippet2.png)
-
 
 ## Installation
 run
+<br />
 **NPM INSTALL**
 **NPM START**
 
