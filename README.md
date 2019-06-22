@@ -1,5 +1,5 @@
 ## Project title
-The watershed guardians is a web application that serves the county of Monterey by helping local residents understand the impacts of climate change on the Carmel river watershed by using maps and graphs.
+The *watershed guardians* is a web application that serves the county of Monterey by helping local residents understand the impacts of climate change on the Carmel river watershed by using maps and graphs.
 
 ## Motivation
 I was working at the watershed and saw the impact that the river has on the local population. The water,agriculture and tourism industry all depend on the river as a source of water but don't understand the impact that climate change can have on the water source and how it can affect their personal lives. I wanted to build this project to hopefully project a visual understanding of **why this matters**.
@@ -20,11 +20,10 @@ I was working at the watershed and saw the impact that the river has on the loca
 
 ## Architecture
 ![Soltution architecture](./src/assets/architecture.png)
-![Automatically create markers for new Lat Longs](./src/assets/codeSnippet2.png)
-
 
 ## Installation
 run
+<br />
 **NPM INSTALL**
 **NPM START**
 
@@ -45,6 +44,15 @@ on the left, there is a description of what the ranges of values for the tests f
 ## Contribute
 Thank you for thinking about contributing! Please create a pull request and follow the standard guidlines for contributing to the project. [contribute](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
 
+<<<<<<< HEAD
+=======
+# Write detailed information
+  Detailed information is very helpful to understand an issue.
+
+* When you edit the code, please run `npm run test` to check the formatting of your code before you `git commit`.
+* Ensure the PR description clearly describes the problem and solution. It should include:
+
+>>>>>>> e1ce199bdb35f4477eb77893a731335fd8b41277
 ## Credits
 * [Asaya.io](http://www.asaya.io/) - For their committed help towards helping students acheive their true potential.
 * [Pacific Grove Museum of Natural History](https://www.pgmuseum.org/)- For undertaking this project and doing work that really matters.
