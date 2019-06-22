@@ -45,12 +45,6 @@ on the left, there is a description of what the ranges of values for the tests f
 ## Contribute
 Thank you for thinking about contributing! Please create a pull request and follow the standard guidlines for contributing to the project. [contribute](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
 
-## Write detailed information
-Detailed information is very helpful to understand an issue.
-
-* When you edit the code, please run `npm run test` to check the formatting of your code before you `git commit`.
-* Ensure the PR description clearly describes the problem and solution. It should include:
-
 ## Credits
 * [Asaya.io](http://www.asaya.io/) - For their committed help towards helping students acheive their true potential.
 * [Pacific Grove Museum of Natural History](https://www.pgmuseum.org/)- For undertaking this project and doing work that really matters.
