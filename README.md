@@ -7,7 +7,7 @@ I was working at the watershed and saw the impact that the river has on the loca
 ## Code style
  [Airbnb/JSX](https://github.com/airbnb/javascript/tree/master/react)
  
-## Screenshots
+## How to use
 ![screenshot1](./src/assets/screenShot1.png)
 ![screenshot2](./src/assets/screenShot2.png)
 
@@ -18,9 +18,8 @@ I was working at the watershed and saw the impact that the river has on the loca
 - [UberMapboxReactGL](https://github.com/uber/react-map-gl)
 
 
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-![Inserting Data by testName](./src/assets/codeSnippet1.png)
+## Architecture
+![Soltution architecture](./src/assets/architecture.png)
 ![Automatically create markers for new Lat Longs](./src/assets/codeSnippet2.png)
 
 
