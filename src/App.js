@@ -2,7 +2,7 @@ import React from 'react';
 import Map from './components/Map/Map.js'
 import Chart from './components/Chart/chart.js'
 import data from './data'
-import Infopane from './components/InfoPane/infopane1'
+import Infopane from './components/InfoPane/infopane'
 
 import './App.css';
 import './mobile.css'
