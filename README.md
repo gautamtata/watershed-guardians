@@ -5,8 +5,6 @@ The watershed guardians is a web application that serves the county of Monterey 
 I was working at the watershed and saw the impact that the river has on the local population. The water,agriculture and tourism industry all depend on the river as a source of water but don't understand the impact that climate change can have on the water source and how it can affect their personal lives. I wanted to build this project to hopefully project a visual understanding of **why this matters**.
 
 ## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
  [Airbnb/JSX](https://github.com/airbnb/javascript/tree/master/react)
  
 ## Screenshots
