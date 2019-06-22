@@ -20,9 +20,9 @@ function getModalStyle() {
 }
 
 const useStyles = makeStyles(theme => ({
-     button: {
-        margin: theme.spacing(1),
-      },
+  button: {
+    margin: theme.spacing(1),
+  },
   paper: {
     position: 'absolute',
     width: 400,
@@ -49,25 +49,38 @@ function SimpleModal() {
 
   return (
     <div>
-     
-      <Button id="modal-button" variant="outlined" color="primary" className={classes.button} onClick={handleOpen}>HEALTHY RANGE</Button>
+      <Button
+        id="modal-button"
+        variant="outlined"
+        color="primary"
+        className={classes.button}
+        onClick={handleOpen}
+      >
+        HEALTHY RANGE
+      </Button>
       <Modal
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
         open={open}
         onClose={handleClose}
       >
-        <div style={modalStyle} className={classes.paper} id = "test-range-modal">
+        <div style={modalStyle} className={classes.paper} id="test-range-modal">
           <Typography variant="h6" id="modal-title">
-            <b> <em> These ranges are approximate and research shows that they correspond to a healthy aquatic life</em></b>
+            <b>
+              {' '}
+              <em>
+                {' '}
+                These ranges are approximate and research shows that they
+                correspond to a healthy aquatic life
+              </em>
+            </b>
           </Typography>
           <Typography variant="subtitle1" id="simple-modal-description">
-           <b> pH => 7.0 - 8.0 </b>
-           <b> Air Temperature => 10.0 degree - 20.0 degree celcius </b>
-           <b> Depth => Above 100m </b>
-           <b> Dissolved Oxygen => more than 8mg/L    </b>
+            <b> pH => 7.0 - 8.0 </b>
+            <b> Air Temperature => 10.0 degree - 20.0 degree celcius </b>
+            <b> Depth => Above 100m </b>
+            <b> Dissolved Oxygen => more than 8mg/L </b>
           </Typography>
-          
         </div>
       </Modal>
     </div>
