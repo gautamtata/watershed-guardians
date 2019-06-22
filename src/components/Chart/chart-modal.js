@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 
@@ -55,7 +54,7 @@ function SimpleModal() {
         className={classes.button}
         onClick={handleOpen}
       >
-        HEALTHY RANGE
+        LEARN MORE
       </Button>
       <Modal
         aria-labelledby="simple-modal-title"

@@ -15,11 +15,11 @@ class TestPane extends Component {
     if (this.state.testInfoName) {
       return (
         <div className="test-pane">
-          <TestInfoPane testName={this.state.testInfoName} close={this.close} />
+          <TestInfoPane testName={this.state.testInfoName} close={this.close} />{' '}
+          <div className="healthy-test-ranges"></div>
         </div>
       );
     }
-
     let testComponents = this.props.allTests.map((testName, i) => {
       let className = !this.props.selectedTests.includes(testName)
         ? 'test'

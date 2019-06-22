@@ -16,7 +16,8 @@ class TestInfoPane extends Component {
   render() {
     console.log(this.props.testName);
     return (
-      <div className="test-info-pane">
+      
+      <div className="test-info-pane">cs
         <h2>{this.props.testPane}</h2>
         <i
           className="close-icon fas fa-times fa-2x"

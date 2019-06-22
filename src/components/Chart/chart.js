@@ -92,8 +92,7 @@ class Chart extends Component {
           <div className="canvas-chart">
             <div className="title">{this.props.title}</div>
             <p className="subtitle">
-              By interacting with this graph you can learn more about the health
-              of the watershed
+              The data represented in the chart represents tests conducted which correlates to the health of the watershed.
             </p>
             <SimpleModal />
             <CanvasJSChart options={options} />
