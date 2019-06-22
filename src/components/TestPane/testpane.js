@@ -42,7 +42,20 @@ class TestPane extends Component {
       );
     });
 
-    return <div className="test-pane">{testComponents}</div>;
+    return (
+      <div className="test-pane">
+        <div className="messages">
+          <p>
+            <b> Test values of a healthy river </b> <br />
+            1. pH: 6.0 - 8.5 <br />
+            2. TempC: 10 - 20 Celcius <br />
+            3. Depth: ~1000cm <br />
+            4. Dissolved Oxygen: ~8mG/L
+          </p>
+        </div>
+        {testComponents}
+      </div>
+    );
   }
 }
 
