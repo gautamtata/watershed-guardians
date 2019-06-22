@@ -16,7 +16,20 @@
     min-height: 500px;
     background-color: white;
 }
+.canvas-chart {
+    padding-right: 100px
+}
 
+#modal-button {
+   position: relative;
+   left:450px;
+   bottom:60px;
+}
+
+.subtitle{
+    position: absolute;
+    left: 20px;
+}
 .title {
     padding: 20px;
     font-size: 1.7em;

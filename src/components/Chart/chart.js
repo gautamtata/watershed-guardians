@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CanvasJSReact from '../CanvasChart/canvaschart.js';
 import TestPane from '../TestPane/testpane.js'
+import SimpleModal from './chart-modal'
 import './chart.css'
 
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -87,8 +88,11 @@ class Chart extends Component {
 						/>
 			 			<div className="canvas-chart">
 			 				<div className="title">{this.props.title}</div>
+							 <p className ="subtitle">By interacting with this graph you can learn more about the health of the watershed</p>
+							 <SimpleModal />
 				 			<CanvasJSChart options={options}/>
 			 			</div>
+						
 
 			 	</div>
 			 </div>
