@@ -22,8 +22,8 @@ If you're using any code style like xo, standard etc. That will help others whil
 
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-![Inserting Data by testName](./src/assets/screenShot1.png)
-![Automatically create markers for new Lat Longs](./src/assets/screenShot2.png)
+![Inserting Data by testName](./src/assets/codeSnippet1.png)
+![Automatically create markers for new Lat Longs](./src/assets/codeSnippet2.png)
 
 
 ## Installation
@@ -32,9 +32,9 @@ run
 **NPM START**
 
 ## API Reference
-[MAPBOX](https://www.mapbox.com/)
-[CANVASJS](https://canvasjs.com/)
-[GOOGLE SPREADSHEETS API](https://developers.google.com/sheets/api/)
+* [MAPBOX](https://www.mapbox.com/)
+* [CANVASJS](https://canvasjs.com/)
+* [GOOGLE SPREADSHEETS API](https://developers.google.com/sheets/api/)
 
 ## How to use?
 1. The info-panel on the screen gives information about what the project is about and why it's important. 
