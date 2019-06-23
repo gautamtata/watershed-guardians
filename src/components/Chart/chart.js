@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CanvasJSReact from '../CanvasChart/canvaschart.js';
+import CanvasJSReact from '../CanvasChart/canvasjs.react';
 import TestPane from '../TestPane/testpane.js';
 import SimpleModal from './chart-modal';
 import './chart.css';
@@ -27,8 +27,8 @@ class Chart extends Component {
     this.setState({ selectedTests: newSelectedTests });
   };
 
-  componentDidMount() {
-    // initializing selectedTests to all possible tests:
+  componentWillMount() {
+    // initializing selectedTests to the first test:
     var testNames = [];
 
     for (var testName in this.props.data) {
@@ -37,6 +37,7 @@ class Chart extends Component {
         testNames.push(testName);
       }
     }
+
     this.setState({ selectedTests: [testNames[0]], allTests: testNames });
   }
 
