@@ -1,4 +1,7 @@
 ## Watershed Guardians Data
+
+See live demo at: [http://data.thewatershedguardians.org](http://data.thewatershedguardians.org).
+
 The *watershed guardians* is a web application that serves the county of Monterey by helping local residents understand the impacts of climate change on the Carmel river watershed by using maps and graphs.
 
 ## Motivation
@@ -8,16 +11,20 @@ I was working at the watershed and saw the impact that the river has on the loca
  [Airbnb/JSX](https://github.com/airbnb/javascript/tree/master/react)
  
 ## How to use
+You can see the map of the Carmel river region, which has markers for each test site.
 ![screenshot1](./src/assets/screenShot1.png)
+
+When you click on a marker for the test site, you can see the data accumulated for that point. We've included 4 test data for each location. Each test data point corresponds to river health in some way.
 ![screenshot2](./src/assets/screenShot2.png)
 
+Feel free to check out the following short video in which I walk through the project:
+[![Watch the video](https://img.youtube.com/vi/FuKWo6Jvttw/maxresdefault.jpg)](https://youtu.be/FuKWo6Jvttw)
 
 ## Tech/framework used
 <b>Built with</b>
 - [React](https://reactjs.org/)
 - [Mapbox](https://www.mapbox.com/)
 - [UberMapboxReactGL](https://github.com/uber/react-map-gl)
-
 
 ## Architecture
 ![Soltution architecture](./src/assets/architecture.png)
@@ -32,15 +39,6 @@ run
 * [MAPBOX](https://www.mapbox.com/)
 * [CANVASJS](https://canvasjs.com/)
 * [GOOGLE SPREADSHEETS API](https://developers.google.com/sheets/api/)
-
-## How to use?
-1. The info-panel on the screen gives information about what the project is about and why it's important. 
-It also gives a description of the tests and how to understand what the results of the tests mean. This is a good starting point to understand what the website is about.
-
-2. Clicking on a marker, a Graph will render. A user can hover over the graph to get what each point of data for that day it.
-on the left, there is a description of what the ranges of values for the tests for a healthy river are and a user can compare it to the values that are on the graph.
-
-3. Clicking on multiple checkboxes lets the user render multiple graphs for different tests. There is an info button next to each test to learn more about how each test effects the river and in what way.
 
 ## Contribute
 Thank you for thinking about contributing! Please create a pull request and follow the standard guidlines for contributing to the project. [contribute](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
