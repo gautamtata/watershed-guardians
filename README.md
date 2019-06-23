@@ -27,6 +27,7 @@ Feel free to check out the following short video in which I walk through the pro
 - [UberMapboxReactGL](https://github.com/uber/react-map-gl)
 
 ## Architecture
+Here's the React architecture for the components that shows the parent, child relationship and how user interactions in one component triggers another:
 ![Soltution architecture](./src/assets/architecture.png)
 
 ## Installation
